@@ -14,6 +14,11 @@ namespace curso {
             this.quantidadeEmEstoque = quantidadeEmEstoque;
         }
 
+        public Produto(string nome, double preco) {
+            this.nome = nome;
+            this.preco = preco;
+            this.quantidadeEmEstoque = 0;
+        }
 
         public double valorTotalEmEstoque() {
             return preco * quantidadeEmEstoque;
