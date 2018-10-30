@@ -4,9 +4,17 @@ using System.Globalization;
 namespace curso {
     class Produto {
 
-        public string nome;
-        public double preco;
-        public int quantidadeEmEstoque;
+        public string nome { get; private set; }
+        public double preco { get; private set; }
+        public int quantidadeEmEstoque { get; private set; }
+
+        //public string getNome() {
+        //    return this.nome;
+        //}
+
+        //public void setNome(string nome) {
+        //    this.nome = nome;
+        //}
 
         public Produto(string nome, double preco, int quantidadeEmEstoque) {
             this.nome = nome;

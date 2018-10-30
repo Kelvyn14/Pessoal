@@ -16,28 +16,33 @@ namespace curso {
             Console.Write("Preço: ");
             double preco = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
 
-            //Console.Write("Quantidade em estoque: ");
-            //int quantidade = int.Parse(Console.ReadLine());
+            Console.Write("Quantidade em estoque: ");
+            int quantidade = int.Parse(Console.ReadLine());
 
-            //P = new Produto(nome, preco, quantidade);
-            P = new Produto(nome, preco);
+            P = new Produto(nome, preco, quantidade);
 
-            Console.WriteLine();
-            Console.WriteLine("Dados do produto: " + P);
-            Console.WriteLine();
+            Console.WriteLine(P.nome);
 
-            Console.Write("Digite a quantidade de produtos que entraram no estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            P.realizarEntrada(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + P);
-            Console.WriteLine();
+            //P.setNome("Televisão");
+            //Console.WriteLine(P.getNome());
+            //P = new Produto(nome, preco);
 
-            Console.Write("Digite a quantidade de produtos que sairam no estoque: ");
-            qte = int.Parse(Console.ReadLine());
-            P.realizarSaida(qte);
-            Console.WriteLine();
-            Console.WriteLine("Dados atualizados: " + P);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados do produto: " + P);
+            //Console.WriteLine();
+
+            //Console.Write("Digite a quantidade de produtos que entraram no estoque: ");
+            //qte = int.Parse(Console.ReadLine());
+            //P.realizarEntrada(qte);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados atualizados: " + P);
+            //Console.WriteLine();
+
+            //Console.Write("Digite a quantidade de produtos que sairam no estoque: ");
+            //qte = int.Parse(Console.ReadLine());
+            //P.realizarSaida(qte);
+            //Console.WriteLine();
+            //Console.WriteLine("Dados atualizados: " + P);
 
             Console.ReadLine();
         }
