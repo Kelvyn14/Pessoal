@@ -8,6 +8,13 @@ namespace curso {
         public double preco;
         public int quantidadeEmEstoque;
 
+        public Produto(string nome, double preco, int quantidadeEmEstoque) {
+            this.nome = nome;
+            this.preco = preco;
+            this.quantidadeEmEstoque = quantidadeEmEstoque;
+        }
+
+
         public double valorTotalEmEstoque() {
             return preco * quantidadeEmEstoque;
         }
